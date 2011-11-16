@@ -7,6 +7,17 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 
+#Gems for starting rails, man
+gem 'execjs'
+gem 'therubyracer'
+
+#Gem for user registration, man
+gem 'devise'
+
+#Gem for readable code and my comfortabilty, man
+gem 'slim'
+gem 'simple_form'
+gem 'decent_exposure'
 
 # Gems used only for assets and not required
 # in production environments by default.
