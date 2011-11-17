@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321452002.4760811:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321512356.7736604:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%f038451771aab04952ef8bed28f25561I"logical_path;
+F"%0ec5c91ee90d0a04784591892e349230I"logical_path;
 FI"application.js;
 TI"pathname;
 FI"0$root/app/assets/javascripts/application.js;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2011-11-16T16:40:46+03:00;
+FI"2011-11-17T09:40:09+03:00;
 FI"	body;
 FI"î// This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
@@ -20,9 +20,12 @@ FI"î// This is a manifest file that'll be compiled into including all the file
 ;
 ;
 FI"asset_paths;
-F["c/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js"g/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.jsI"0$root/app/assets/javascripts/application.js;
+F[
+"c/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js"g/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.jsI"4$root/app/assets/javascripts/bootstrap-modal.js;
+FI"6$root/app/assets/javascripts/bootstrap-popover.js;
+FI"0$root/app/assets/javascripts/application.js;
 FI"dependency_paths;
-F[	{I"	path;
+F[{I"	path;
 FI"0$root/app/assets/javascripts/application.js;
 FI"
 mtime;
@@ -33,10 +36,11 @@ F"%549ddbd6cc7eb5cac3ef01164f35f695{I"	path;
 FI"!$root/app/assets/javascripts;
 FI"
 mtime;
-FIu;ÍÄ4Ûs‰
+FIu;&ÍÄ
+Öû†
 ;I"MSK;
-T;iÜ;i;"@;i0*I"hexdigest;
-F"%d4f88971c1988e00732efc3b47e84f9d{I"	path;
+T;iG;i;"X0;i0*I"hexdigest;
+F"%2a5ae405a70c6eb31cf05941d11bdd79{I"	path;
 F"c/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.jsI"
 mtime;
 FIu;ÍÄuïÂ¢
@@ -48,5 +52,20 @@ mtime;
 FIu;ÍÄuïÂ¢
 ;I"MSK;
 T;iÛ;i;"Iê;i0*I"hexdigest;
-F"%2cda53cd72f5fa4dc3aaf1133f2f8d18I"_version;
+F"%2cda53cd72f5fa4dc3aaf1133f2f8d18{I"	path;
+FI"4$root/app/assets/javascripts/bootstrap-modal.js;
+FI"
+mtime;
+FIu;&ÍÄ5Gù
+;I"MSK;
+T;iÌ;i;"tê;i0*I"hexdigest;
+F"%055a321013b72b8f01750dbaa08885f0{I"	path;
+FI"6$root/app/assets/javascripts/bootstrap-popover.js;
+FI"
+mtime;
+FIu;&ÍÄ
+Öû†
+;I"MSK;
+T;iG;i;"X0;i0*I"hexdigest;
+F"%83bd1ecfa44b344c90f99725f8becc02I"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

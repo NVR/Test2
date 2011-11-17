@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321452002.40332:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321512356.703747:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%15b852193695c24295e822e2b1447397I"logical_path;
+F"%d56710353a18b2962f296dfcf8fa2c1bI"logical_path;
 FI"application.css;
 TI"pathname;
 FI"1$root/app/assets/stylesheets/application.css;
@@ -9,7 +9,7 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2011-11-16T15:57:07+03:00;
+FI"2011-11-17T09:37:43+03:00;
 FI"	body;
 FI":/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
@@ -18,9 +18,10 @@ FI":/*
 */
 ;
 FI"asset_paths;
-F[I"1$root/app/assets/stylesheets/application.css;
+F[I"1$root/app/assets/stylesheets/application.css;
+FI"/$root/app/assets/stylesheets/bootstrap.css;
 FI"dependency_paths;
-F[{I"	path;
+F[{I"	path;
 FI"1$root/app/assets/stylesheets/application.css;
 FI"
 mtime;
@@ -31,8 +32,15 @@ F"%2b7a967c0b2a73b7a2cb015e2bfeaa8c{I"	path;
 FI"!$root/app/assets/stylesheets;
 FI"
 mtime;
-FIu;ê€4ósä
+FIu;&ê€Ïù¼–
 ;I"MSK;
-T;i†;i;"@;i0*I"hexdigest;
-F"%5a27105b7d392874d83525e2a1baa875I"_version;
+T;i•;i;"@P;i0*I"hexdigest;
+F"%1761ce4d600b92e369b6094e095447b1{I"	path;
+FI"/$root/app/assets/stylesheets/bootstrap.css;
+FI"
+mtime;
+FIu;&ê€ºÒ¼–
+;I"MSK;
+T;i;i;"S;i0*I"hexdigest;
+F"%699203fcfdeeef5caab9be14ccc71a94I"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5
