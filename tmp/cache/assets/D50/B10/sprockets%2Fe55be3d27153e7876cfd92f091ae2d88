@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560730.4300597:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321561571.5032704:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%b4d382f847d7bbd5451d46a8b74004a5I"logical_path;
+F"%9cded2b30642d0116f3b16dc8e83db9bI"logical_path;
 F"custom.cssI"pathname;
 FI"1$root/app/assets/stylesheets/custom.css.sass;
 FI"content_type;

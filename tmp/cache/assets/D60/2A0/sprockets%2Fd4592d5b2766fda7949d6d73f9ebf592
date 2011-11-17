@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560709.9323668:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321561552.1084657:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%ef35926aad91ec46e843c78783146ae5I"logical_path;
+F"%894c40c855450d492bbce5ef1daf24eeI"logical_path;
 F"#jquery-ui-1.8.16.custom.min.jsI"pathname;
 FI"@$root/app/assets/javascripts/jquery-ui-1.8.16.custom.min.js;
 FI"content_type;
