@@ -1,0 +1,77 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321524177.2844434:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%de2c377e604cfc6026e6f85b2dc72ac6I"logical_path;
+F"event_calendar.jsI"pathname;
+FI"3$root/app/assets/javascripts/event_calendar.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2011-11-17T12:10:24+03:00;
+FI"	body;
+FI"D/*
+ * Smart event highlighting
+ * Handles for when events span rows, or don't have a background color
+ */
+
+Event.observe(window, "load", function() {
+  var highlight_color = "#2EAC6A";
+  
+  // highlight events that have a background color
+  $$(".ec-event-bg").each(function(ele) {
+    ele.observe("mouseover", function(evt) {
+      event_id = ele.readAttribute("data-event-id");
+      event_class_name = ele.readAttribute("data-event-class");
+      $$(".ec-"+event_class_name+"-"+event_id).each(function(el) {
+        el.setStyle({ backgroundColor: highlight_color });
+      });
+    });
+    ele.observe("mouseout", function(evt) {
+      event_id = ele.readAttribute("data-event-id");
+      event_class_name = ele.readAttribute("data-event-class");
+      event_color = ele.readAttribute("data-color");
+      $$(".ec-"+event_class_name+"-"+event_id).each(function(el) {
+        el.setStyle({ backgroundColor: event_color });
+      });
+    });
+  });
+  
+  // highlight events that don't have a background color
+  $$(".ec-event-no-bg").each(function(ele) {
+    ele.observe("mouseover", function(evt) {
+      ele.setStyle({ color: "white" });
+      ele.select("a").each(function(link) {
+        link.setStyle({ color: "white" });
+      });
+      ele.select(".ec-bullet").each(function(bullet) {
+        bullet.setStyle({ backgroundColor: "white" });
+      });
+      ele.setStyle({ backgroundColor: highlight_color });
+    });
+    ele.observe("mouseout", function(evt) {
+      event_color = ele.readAttribute("data-color");
+      ele.setStyle({ color: event_color });
+      ele.select("a").each(function(link) {
+        link.setStyle({ color: event_color });
+      });
+      ele.select(".ec-bullet").each(function(bullet) {
+        bullet.setStyle({ backgroundColor: event_color });
+      });
+      ele.setStyle({ backgroundColor: "transparent" });
+    });
+  });
+});
+;
+FI"asset_paths;
+F[I"3$root/app/assets/javascripts/event_calendar.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"3$root/app/assets/javascripts/event_calendar.js;
+FI"
+mtime;
+FIu:	Time)ê€¾~†)
+:@_zoneI"MSK;
+T:nano_numi:nano_deni:submicro"x :offseti0*I"hexdigest;
+F"%23753cbfb118db2a4c06ad4512e78d89I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

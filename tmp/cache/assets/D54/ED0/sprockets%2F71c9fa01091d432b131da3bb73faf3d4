@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321512356.7055438:@value{	I"length:EFiNÝI"digest;
-F"%3a39c211c1cf3da34929c78aaf3fe401I"source;
-FI"NÝ/*
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321542925.9159944:@value{	I"length:EFizðI"digest;
+F"%3e28490e09808986a58267d2975f1984I"source;
+FI"zð/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
@@ -2473,6 +2473,300 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
+/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.space {
+  padding-top: 60px;
+}
+
+/* line 4, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.nice-links {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 9, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.blkbtn a {
+  color: #333333;
+}
+/* line 11, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.blkbtn a:hover {
+  text-decoration: none;
+}
+
+/* line 13, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+#Sat {
+  background: #990000;
+}
+
+/* line 16, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.form-stacked .checkbox-inline {
+  padding-top: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 20, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.eventname {
+  width: 70%;
+  height: 24px;
+  font-size: 18px;
+  color: #333333;
+}
+/* 
+  Event Calendar stylesheet
+  
+  Colors:
+  #d5d5d5 - border (gray)
+  #303030 - day names bg (gray)
+  #444 - number (gray)
+  #ecede2 - day header bg (light tan)
+  ##d7d7ba - today header bg (tan)
+  #ffffdd - today bg light (yellow)
+  #777 - other month number (gray)
+  #efefef - other month day header (gray)
+  #2eac6a - hover (green)
+*/
+
+/* Outer most container */
+
+.ec-calendar {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+/* Month name header & links */
+.ec-calendar-header {
+  padding: 5px 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.ec-month-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.ec-month-nav{
+  text-align: center;
+}
+.ec-month-nav a{
+  color: #333;
+
+
+}
+
+/* Containers */
+.ec-body {
+  position: relative;
+  border-right: 1px solid #303030;
+  white-space: nowrap;
+}
+
+/* Day names */
+.ec-day-names {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  table-layout: fixed;
+  padding: 2px 0;
+  padding-bottom:10px;
+  background: #303030;
+  color: white;
+}
+
+.ec-day-name {
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+table th {
+  padding: 0; 
+  line-height: 16px;
+  text-align: center;
+  padding: 0px;
+  font-size: 16px;
+}
+
+/* Rows container and Row */
+.ec-rows {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  border-right: 1px solid #d5d5d5;
+}
+
+.ec-row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background */
+.ec-row-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.ec-day-bg {
+  border-left: 1px solid #d5d5d5;
+}
+
+.ec-today-bg {
+  background-color: #ffffdd;
+}
+
+.ec-row-table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Day header */
+.ec-day-header {
+  color: #444;
+  text-align: right;
+  padding: 0 5px;
+  line-height: 16px;
+  border-top: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px dotted #bbbbbb;
+  background-color: #ecede2;
+  overflow: hidden;
+}
+
+a.ec-day-link {
+  color: #444;
+}
+
+.ec-today-header {
+  background-color: #d7d7ba;
+}
+
+.ec-weekend-day-header {
+  
+}
+
+.ec-other-month-header {
+  background-color: #efefef;
+  color: #777;
+}
+
+.ec-other-month-bg {
+  
+}
+
+
+/* Event cell and container */
+.ec-event-cell {
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 1px;
+  padding-left: 2px;
+}
+
+.ec-event-cell a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ec-no-event-cell {
+  cursor: default;
+}
+
+.ec-event {
+  color: white;
+  padding-right: 1px;
+  padding-left: 11px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ec-event :hover {
+  /* doesn't look as good as js highlighting */
+  /* background-color: #2eac6a; */
+}
+
+.ec-event-bg a {
+  color: white;
+}
+
+/* used to distinguish non-all_day events */
+.ec-event-no-bg {
+  position: relative;
+  /* padding-left: 5px; */
+}
+
+.ec-event-no-bg a {
+  /* isn't implemented in all browsers */
+  color: inherit;
+}
+
+.ec-event-time {
+  font-size: 85%;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+
+/* Left and right arrows */
+/* Doesn't work in IE6, use bg images instead */
+.ec-left-arrow, .ec-right-arrow {
+  position: relative;
+  top: 3px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: -8px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.ec-left-arrow {
+  margin-left: -7px;
+  margin-right: auto;
+  border-right: 4px solid white;
+}
+
+.ec-right-arrow {
+  margin-left: auto;
+  margin-right: 3px;
+  border-left: 4px solid white;
+}
+
+/* remove this to not have a bullet */
+/* don't look as good in ie */
+.ec-bullet {
+  position: absolute;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  margin-left: -7px;
+  margin-right: auto;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
 ;
 FI"_version;
-F"%d56710353a18b2962f296dfcf8fa2c1b
+F"%0b14b0d97d546eea4da20185e37313bf

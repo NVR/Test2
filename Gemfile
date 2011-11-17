@@ -14,6 +14,8 @@ gem 'therubyracer'
 #Gem for user registration, man
 gem 'devise'
 
+gem 'event-calendar', :require => 'event_calendar'
+
 #Gem for readable code and my comfortabilty, man
 gem 'slim'
 gem 'simple_form'

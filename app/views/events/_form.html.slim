@@ -1,0 +1,8 @@
+div.form-stacked
+  = simple_form_for(event) do |f|
+    = f.input :name, :input_html=> {:class => 'eventname'}
+    = f.input :start_at, :as => 'string', :input_html => { :class => 'date_picker' }
+    = f.input :end_at, :as => 'string'
+    = f.input :repeat , :label_html => {:class => 'checkbox-inline'}
+    div.actions
+      = f.button :submit, :class => "btn"

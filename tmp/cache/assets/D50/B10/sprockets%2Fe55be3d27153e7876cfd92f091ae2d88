@@ -1,0 +1,64 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321542925.8874488:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%5eaf23ca925340ed585081d1754c5aa8I"logical_path;
+F"custom.cssI"pathname;
+FI"1$root/app/assets/stylesheets/custom.css.sass;
+FI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2011-11-17T18:15:22+03:00;
+FI"	body;
+FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.space {
+  padding-top: 60px;
+}
+
+/* line 4, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.nice-links {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 9, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.blkbtn a {
+  color: #333333;
+}
+/* line 11, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.blkbtn a:hover {
+  text-decoration: none;
+}
+
+/* line 13, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+#Sat {
+  background: #990000;
+}
+
+/* line 16, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.form-stacked .checkbox-inline {
+  padding-top: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 20, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.eventname {
+  width: 70%;
+  height: 24px;
+  font-size: 18px;
+  color: #333333;
+}
+;
+FI"asset_paths;
+F[I"1$root/app/assets/stylesheets/custom.css.sass;
+FI"dependency_paths;
+F[{I"	path;
+FI"1$root/app/assets/stylesheets/custom.css.sass;
+FI"
+mtime;
+FIu:	Time/ê€Î>h=
+:@_zoneI"MSK;
+T:nano_numiÇ:nano_deni:submicro":offseti0*I"hexdigest;
+F"%d580b3f84240beab2d2c1fe42a0f95c2I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

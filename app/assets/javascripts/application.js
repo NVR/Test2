@@ -5,5 +5,18 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+
+$(function (){
+  $("event[start_at]").datepicker();
+});
+
+$(function (){
+  $("#event[end_at]").datetimepicker();
+});
+
+$(function() {
+  $("input#.date_picker").datepicker();
+});

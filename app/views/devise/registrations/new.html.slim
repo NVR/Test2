@@ -1,0 +1,15 @@
+div.container
+  h2.page-header  Sign up
+
+  div.form-stacked
+    = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| 
+      = f.input :email 
+      = f.input :username
+      = f.input :password 
+      = f.input :password_confirmation 
+      br
+
+      div.actions
+        = f.button :submit, "Sign up", :class => "btn"
+        = render :partial => "devise/shared/links"
+
