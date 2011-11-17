@@ -10525,3 +10525,291 @@ Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 21:28:00 +0300
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-17 21:30:07 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (3.4ms)
+Rendered layouts/_header.html.slim (82.2ms)
+Completed 200 OK in 189ms (Views: 177.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /bootstrap.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /event_calendar.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.6.2.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery-1.6.2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 21:30:08 +0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (3.0ms)
+Rendered layouts/_header.html.slim (60.0ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /event_calendar.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.6.2.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery-1.6.2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /event_calendar.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 21:37:59 +0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-11-17 21:38:01 +0300
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.slim (4.8ms)
+Rendered devise/registrations/new.html.slim within layouts/application (505.8ms)
+Rendered layouts/_header.html.slim (2.3ms)
+Completed 200 OK in 631ms (Views: 555.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /event_calendar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.6.2.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery-1.6.2.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:02 +0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-11-17 21:38:05 +0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.slim (0.9ms)
+Rendered devise/sessions/new.html.slim within layouts/application (24.0ms)
+Rendered layouts/_header.html.slim (2.8ms)
+Completed 200 OK in 155ms (Views: 58.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /event_calendar.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.6.2.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery-1.6.2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.min.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2011-11-17 21:38:06 +0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
