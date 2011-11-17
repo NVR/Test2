@@ -10885,3 +10885,17 @@ Served asset /jquery-ui-1.8.16.custom.min.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-17 22:39:45 +0300
 Served asset /application.js - 304 Not Modified (2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111116134452)
+Migrating to AddUsernameToUsers (20111116140152)
+Migrating to CreateEvents (20111117091024)
+Migrating to AddUserIdToEvents (20111117195958)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "events" ADD "user_id" integer[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111117195958')
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
