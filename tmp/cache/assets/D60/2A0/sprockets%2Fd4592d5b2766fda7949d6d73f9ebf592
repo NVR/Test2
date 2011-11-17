@@ -1,14 +1,14 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321547337.5302908:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560709.9323668:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%ccffd4fd7f86f7e668f41f55014e5809I"logical_path;
+F"%ef35926aad91ec46e843c78783146ae5I"logical_path;
 F"#jquery-ui-1.8.16.custom.min.jsI"pathname;
 FI"@$root/app/assets/javascripts/jquery-ui-1.8.16.custom.min.js;
 FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2011-11-17T08:24:16+03:00;
+FI"2011-11-17T21:24:35+03:00;
 FI"	body;
 FI"Uí/*!
  * jQuery UI 1.8.16
@@ -202,7 +202,8 @@ F[{I"	path;
 FI"@$root/app/assets/javascripts/jquery-ui-1.8.16.custom.min.js;
 FI"
 mtime;
-FIu:	Time%ê€   a:@_zoneI"MSK;
-T:offseti0*I"hexdigest;
-F"%74a3c9b2e68ea9eb397de631a581a28cI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+FIu:	Time2ê€}¤1b
+:@_zoneI"MSK;
+T:nano_numii:nano_deni:submicro":offseti0*I"hexdigest;
+F"%cfb8dc2f17dcf2065c520b7b5a2089e0I"_version;
+F"%1c9609bc58b1e77c196de29021583379

@@ -1,14 +1,14 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321512356.7688694:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560709.919111:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%4f2993f63eb9d4a2f555356113c690e4I"logical_path;
+F"%bc92826dce871ebde9f27f02b6d0a903I"logical_path;
 F"bootstrap-popover.jsI"pathname;
 FI"6$root/app/assets/javascripts/bootstrap-popover.js;
 FI"content_type;
 FI"application/javascript;
 FI"
 mtime;
-FI"2011-11-17T09:40:09+03:00;
+FI"2011-11-17T21:24:35+03:00;
 FI"	body;
 FI"°
 /* ===========================================================
@@ -110,9 +110,8 @@ F[{I"	path;
 FI"6$root/app/assets/javascripts/bootstrap-popover.js;
 FI"
 mtime;
-FIu:	Time&ê€
-…ž 
+FIu:	Time2ê€}¤1b
 :@_zoneI"MSK;
-T:nano_numiG:nano_deni:submicro"X0:offseti0*I"hexdigest;
-F"%83bd1ecfa44b344c90f99725f8becc02I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numii:nano_deni:submicro":offseti0*I"hexdigest;
+F"%0f7e3c665312ad2f00557f62792bb79dI"_version;
+F"%1c9609bc58b1e77c196de29021583379

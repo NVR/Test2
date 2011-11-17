@@ -1,17 +1,16 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321548118.1198997:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560732.3851871:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%4bc841ade44d62fd79d71b193fbdfe13I"logical_path;
-FI"2smoothness/images/ui-icons_222222_256x240.png;
-TI"pathname;
+F"%057ce78cd52cc8f396352fe0c6d37a5aI"logical_path;
+F"2smoothness/images/ui-icons_222222_256x240.pngI"pathname;
 FI"O$root/app/assets/stylesheets/smoothness/images/ui-icons_222222_256x240.png;
 FI"content_type;
 FI"image/png;
 FI"
 mtime;
-FI"2011-11-17T08:40:30+03:00;
+FI"2011-11-17T21:24:35+03:00;
 FI"length;
 FI"	4369;
 FI"digest;
-F"%ee8f7d61d682fe137bbde18bec18adfeI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%390b74b682a6e3601e0265cacd1ac422I"_version;
+F"%1c9609bc58b1e77c196de29021583379

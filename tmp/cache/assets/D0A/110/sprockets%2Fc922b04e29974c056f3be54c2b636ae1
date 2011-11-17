@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321547364.744666:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%1c057f2354b3eea1c75ed8bb97445d03I"logical_path;
-FI"Bui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png;
-TI"pathname;
-FI"_$root/app/assets/stylesheets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T08:24:12+03:00;
-FI"length;
-FI"90;
-FI"digest;
-F"%65f9abd854767d07aee9220dfb214ed1I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

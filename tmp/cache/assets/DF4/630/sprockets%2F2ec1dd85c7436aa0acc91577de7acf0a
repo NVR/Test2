@@ -1,0 +1,16 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560732.3259742:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%a6fc3fce79ec1a05b630b732e7d58343I"logical_path;
+F"5smoothness/images/ui-bg_flat_0_aaaaaa_40x100.pngI"pathname;
+FI"R$root/app/assets/stylesheets/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2011-11-17T21:24:35+03:00;
+FI"length;
+FI"180;
+FI"digest;
+F"%2cf4f64704121d570c8c944feecb599dI"_version;
+F"%1c9609bc58b1e77c196de29021583379

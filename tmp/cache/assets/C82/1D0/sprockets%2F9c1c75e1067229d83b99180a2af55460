@@ -1,44 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321552407.455099:@value{	I"length:EFinI"digest;
-F"%3edb3a02bb5361b557343596e6ca6273I"source;
-FI"n/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.space {
-  padding-top: 60px;
-}
-
-/* line 4, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.nice-links {
-  display: inline-block;
-  margin-left: 5px;
-}
-
-/* line 9, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.blkbtn a {
-  color: #333333;
-}
-/* line 11, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.blkbtn a:hover {
-  text-decoration: none;
-}
-
-/* line 13, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-#Sat {
-  background: #990000;
-}
-
-/* line 16, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.form-stacked .checkbox-inline {
-  padding-top: 10px;
-  display: inline-block;
-  margin-left: 5px;
-}
-
-/* line 20, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.eventfield {
-  width: 70%;
-  height: 24px;
-  font-size: 18px;
-  color: #333333;
-}
-;
-FI"_version;
-F"%963e19999782fb3700d9da83b26716da

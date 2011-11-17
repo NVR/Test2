@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321547364.7888854:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%eec2a97ed19426b536d51f6e4524bf45I"logical_path;
-FI"?ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png;
-TI"pathname;
-FI"\$root/app/assets/stylesheets/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T08:24:12+03:00;
-FI"length;
-FI"	3762;
-FI"digest;
-F"%f9efb8c388911269518475932c171286I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

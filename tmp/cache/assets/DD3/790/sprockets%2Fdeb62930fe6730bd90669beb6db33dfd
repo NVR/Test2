@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321547448.4298744:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%a82d49d77f380ccaa813c19c0641fe88I"logical_path;
-FI"8ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png;
-TI"pathname;
-FI"U$root/app/assets/stylesheets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T08:24:12+03:00;
-FI"length;
-FI"105;
-FI"digest;
-F"%999f0543c3333932cc1c675a51efe822I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

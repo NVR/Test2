@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321547366.1383595:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%fe6358b32073ea04472423960db3d416I"logical_path;
-FI"4ui-lightness/images/ui-icons_ef8c08_256x240.png;
-TI"pathname;
-FI"Q$root/app/assets/stylesheets/ui-lightness/images/ui-icons_ef8c08_256x240.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T08:24:12+03:00;
-FI"length;
-FI"	4369;
-FI"digest;
-F"%856f68e6c7fc44275efa3377eaa0bf69I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

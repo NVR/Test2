@@ -1,14 +1,14 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321552407.4132018:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321560730.4300597:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%963e19999782fb3700d9da83b26716daI"logical_path;
+F"%b4d382f847d7bbd5451d46a8b74004a5I"logical_path;
 F"custom.cssI"pathname;
 FI"1$root/app/assets/stylesheets/custom.css.sass;
 FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2011-11-17T20:53:23+03:00;
+FI"2011-11-17T21:24:35+03:00;
 FI"	body;
 FI"n/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 .space {
@@ -57,8 +57,8 @@ F[{I"	path;
 FI"1$root/app/assets/stylesheets/custom.css.sass;
 FI"
 mtime;
-FIu:	Time1ê€’9|Õ
+FIu:	Time2ê€ŒË1b
 :@_zoneI"MSK;
-T:nano_numi`:nano_deni:submicro"`€:offseti0*I"hexdigest;
-F"%59fd78532eb6103953388609381b0e4eI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+T:nano_numiÎ:nano_deni:submicro"—@:offseti0*I"hexdigest;
+F"%056a817cd245034c33923a855690f036I"_version;
+F"%1c9609bc58b1e77c196de29021583379
