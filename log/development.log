@@ -135,3 +135,11 @@ Migrating to AddUsernameToUsers (20111116140152)
   [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
   [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
   [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-11-17 21:22:35 +0300
+Served asset /rails.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-11-17 21:23:21 +0300
+Served asset /rails.png - 304 Not Modified (0ms)
