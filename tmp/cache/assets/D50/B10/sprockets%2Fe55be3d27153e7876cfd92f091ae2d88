@@ -1,16 +1,16 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321542925.8874488:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321552407.4132018:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%5eaf23ca925340ed585081d1754c5aa8I"logical_path;
+F"%963e19999782fb3700d9da83b26716daI"logical_path;
 F"custom.cssI"pathname;
 FI"1$root/app/assets/stylesheets/custom.css.sass;
 FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2011-11-17T18:15:22+03:00;
+FI"2011-11-17T20:53:23+03:00;
 FI"	body;
-FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+FI"n/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 .space {
   padding-top: 60px;
 }
@@ -43,7 +43,7 @@ FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 }
 
 /* line 20, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.eventname {
+.eventfield {
   width: 70%;
   height: 24px;
   font-size: 18px;
@@ -57,8 +57,8 @@ F[{I"	path;
 FI"1$root/app/assets/stylesheets/custom.css.sass;
 FI"
 mtime;
-FIu:	Time/ê€Î>h=
+FIu:	Time1ê€’9|Õ
 :@_zoneI"MSK;
-T:nano_numiÇ:nano_deni:submicro":offseti0*I"hexdigest;
-F"%d580b3f84240beab2d2c1fe42a0f95c2I"_version;
+T:nano_numi`:nano_deni:submicro"`€:offseti0*I"hexdigest;
+F"%59fd78532eb6103953388609381b0e4eI"_version;
 F"%46dde6621c301f4928e3b34efee9e3b5

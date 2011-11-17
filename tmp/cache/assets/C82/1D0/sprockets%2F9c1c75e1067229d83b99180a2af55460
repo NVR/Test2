@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321542925.920868:@value{	I"length:EFimI"digest;
-F"%d9d7ef9e18a1a387182e38fc0e2e471cI"source;
-FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321552407.455099:@value{	I"length:EFinI"digest;
+F"%3edb3a02bb5361b557343596e6ca6273I"source;
+FI"n/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 .space {
   padding-top: 60px;
 }
@@ -33,7 +33,7 @@ FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 }
 
 /* line 20, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
-.eventname {
+.eventfield {
   width: 70%;
   height: 24px;
   font-size: 18px;
@@ -41,4 +41,4 @@ FI"m/* line 1, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
 }
 ;
 FI"_version;
-F"%5eaf23ca925340ed585081d1754c5aa8
+F"%963e19999782fb3700d9da83b26716da

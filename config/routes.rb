@@ -6,4 +6,5 @@ Test2::Application.routes.draw do
 
   resource :events
 
+  root :to => "events#index"
   end

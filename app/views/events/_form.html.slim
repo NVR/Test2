@@ -1,8 +1,11 @@
-div.form-stacked
-  = simple_form_for(event) do |f|
-    = f.input :name, :input_html=> {:class => 'eventname'}
-    = f.input :start_at, :as => 'string', :input_html => { :class => 'date_picker' }
-    = f.input :end_at, :as => 'string'
-    = f.input :repeat , :label_html => {:class => 'checkbox-inline'}
-    div.actions
-      = f.button :submit, :class => "btn"
+div.modal-body
+  div.form-stacked
+    = simple_form_for(event) do |f|
+      = f.input :name, :input_html=> {:class => 'eventfield'}
+      = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+      = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+      = f.input :repeat , :label_html => {:class => 'checkbox-inline'}
+      div.modal-footer
+        li.btn.blkbtn data-controls-modal="newevent" data-backdrop="true"
+          = link_to 'Cancel'
+        = f.button :submit, :class => "btn"

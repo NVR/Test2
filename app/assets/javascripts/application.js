@@ -10,13 +10,9 @@
 //= require_tree .
 
 $(function (){
-  $("event[start_at]").datepicker();
+  $("#event_end_at").datetimepicker();
 });
 
 $(function (){
-  $("#event[end_at]").datetimepicker();
-});
-
-$(function() {
-  $("input#.date_picker").datepicker();
+  $("#event_start_at").datetimepicker();
 });
