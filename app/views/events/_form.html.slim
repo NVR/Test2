@@ -5,7 +5,11 @@ div.modal-body
       = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
       = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
       = f.input :repeat , :label_html => {:class => 'checkbox-inline'}
+      = f.input :repeat_frequency, :input_html=> {:class => 'eventfield repeat_eventfield'}
+      = f.input :repeat_after, :input_html=> {:class => 'eventfield repeat_eventfield'}
       div.modal-footer
         li.btn.blkbtn data-controls-modal="newevent" data-backdrop="true"
           = link_to 'Cancel'
         = f.button :submit, :class => "btn"
+
+-# :controller => "Events", :action => "create", :html => { :method => :put }

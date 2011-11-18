@@ -8,6 +8,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'thin'
+
 #Gems for starting rails, man
 gem 'execjs'
 gem 'therubyracer'

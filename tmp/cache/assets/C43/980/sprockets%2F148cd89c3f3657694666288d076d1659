@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321561552.1043189:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321563151.524792:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%49a8fda57497d2c7c4acdc242be551d3I"logical_path;
+F"%fb46f8cbdd8e8c4319a9d0aa4c475306I"logical_path;
 F"jquery-1.6.2.min.jsI"pathname;
 FI"5$root/app/assets/javascripts/jquery-1.6.2.min.js;
 FI"content_type;
@@ -40,5 +40,5 @@ mtime;
 FIu:	Time2ê€}¤1b
 :@_zoneI"MSK;
 T:nano_numii:nano_deni:submicro":offseti0*I"hexdigest;
-F"%95aa7023775b6ab3ec993889b881c535I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%fc679c5594657e56e6046db703f2d029I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

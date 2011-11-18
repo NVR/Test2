@@ -5,8 +5,8 @@
 // the compiled file.
 //
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
+//= require jquery-ui
 //= require_tree .
 
 $(function (){
@@ -15,4 +15,8 @@ $(function (){
 
 $(function (){
   $("#event_start_at").datetimepicker();
+});
+
+$(function (){
+  $("#test_field").datetimepicker();
 });
