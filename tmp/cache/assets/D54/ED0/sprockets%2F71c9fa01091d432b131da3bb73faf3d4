@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617870.2738526:@value{	I"length:EFiµ®I"digest;
-F"%2d10fa15326845adbfb4227b48647181I"source;
-FI"µ®/*
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321626468.6030328:@value{	I"length:EFi/¯I"digest;
+F"%b128fc7218862ec9e810c3a1809beb50I"source;
+FI"/¯/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
@@ -2517,6 +2517,12 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   font-size: 18px;
   color: #333333;
 }
+
+/* line 30, /home/nvr/Test2/app/assets/stylesheets/custom.css.sass */
+.ohsh {
+  color: white;
+  text-decoration: none;
+}
 /* 
   Event Calendar stylesheet
   
@@ -3543,4 +3549,4 @@ a.ec-day-link {
 }
 ;
 FI"_version;
-F"%fb2e2810a759b04880d778c31a133cc6
+F"%6b77820c1997efc8cb12c5e905111cb2

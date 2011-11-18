@@ -4,7 +4,7 @@ class EventsController < ApplicationController
     @events = Event.all
     @month = (params[:month] || (Time.zone || Time).now.month).to_i
     @year = (params[:year] || (Time.zone || Time).now.year).to_i
-    @event = Event.create(params[:event])
+    @event = params[:id].present? ? Event.find(params[:id]) : Event.create(params[:event])
     @shown_month = Date.civil(@year, @month)
 
     @event_strips = Event.event_strips_for_month(@shown_month)
@@ -13,11 +13,11 @@ class EventsController < ApplicationController
   def create
     @event = Event.create(params[:event])
     @event.save
-    if params[:repeat].present?
-      params[:repeat_frequiency].times do
+    #if params[:repeat].present?
+      #params[:repeat_frequiency].times do
         #kakaya-to funciya dlya vremeni=)
-      end
-    end
+      #end
+    #end
   end
 
   def new

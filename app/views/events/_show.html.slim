@@ -9,9 +9,7 @@ div.modal-body
       = f.input :repeat_after, :input_html=> {:class => 'eventfield repeat_eventfield'}
       div.modal-footer
         li.btn.blkbtn 
-          = link_to 'Cancel', root_path
-        = f.button :submit, :class => "btn", :value => (params[:id].present? ? "Update" : "Create")
-        - if params[:id].present?
-          li.btn.blkbtn = link_to 'Delete', @event, confirm: 'Are you sure?', method: :delete
-
--# :as => 'string',
+          = link_to 'back', root_path
+        = f.button :submit, :class => "btn"
+        li.btn.blkbtn
+          = link_to 'Delete', @event, confirm: 'Are you sure?', method: :delete  if params[:id].present?
