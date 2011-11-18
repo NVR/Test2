@@ -1,117 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617870.441174:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%b04a1865543774e156d82617a1ab9380I"logical_path;
-FI"application.js;
-TI"pathname;
-FI"0$root/app/assets/javascripts/application.js;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2011-11-18T13:44:55+03:00;
-FI"	body;
-FI"C// This is a manifest file that'll be compiled into including all the files listed below.
-// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
-// be included in the compiled file accessible from http://example.com/assets/application.js
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-
-$(function (){
-  $("#event_end_at").datetimepicker();
-});
-
-$(function (){
-  $("#event_start_at").datetimepicker();
-});
-
-$(function (){
-  $("#test_field").datetimepicker();
-});
-;
-FI"asset_paths;
-F["c/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.js"g/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.js"f/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery-ui.jsI"4$root/app/assets/javascripts/bootstrap-modal.js;
-FI"6$root/app/assets/javascripts/bootstrap-popover.js;
-FI"3$root/app/assets/javascripts/event_calendar.js;
-FI"5$root/app/assets/javascripts/jquery-1.6.2.min.js;
-FI"@$root/app/assets/javascripts/jquery-ui-1.8.16.custom.min.js;
-FI"?$root/app/assets/javascripts/jquery-ui-timepicker-addon.js;
-FI"0$root/app/assets/javascripts/application.js;
-FI"dependency_paths;
-F[{I"	path;
-FI"0$root/app/assets/javascripts/application.js;
-FI"
-mtime;
-FIu:	TimeJÍÄî∫q≥
-:@_zoneI"MSK;
-T:nano_numi[:nano_deni:submicro"`:offseti0*I"hexdigest;
-F"%7bb9f30b0d08ceda62abcaeace7dafa4{I"	path;
-FI"!$root/app/assets/javascripts;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%f16d2a6571c6bfe87744b13bbb8b8d62{I"	path;
-F"c/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery.jsI"
-mtime;
-FIu;ÍÄuïÂ¢
-;I"MSK;
-T;iÛ;i;"Iê;i0*I"hexdigest;
-F"%f13b0a093ae4a7ce01ac0abe2e65ab1f{I"	path;
-F"g/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.jsI"
-mtime;
-FIu;ÍÄuïÂ¢
-;I"MSK;
-T;iÛ;i;"Iê;i0*I"hexdigest;
-F"%d2bf5626ad26cedb309c429a6348cff9{I"	path;
-F"f/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery-ui.jsI"
-mtime;
-FIu;ÍÄuïÂ¢
-;I"MSK;
-T;iÛ;i;"Iê;i0*I"hexdigest;
-F"%9a475ecc752b453f2718ed34f64268b8{I"	path;
-FI"4$root/app/assets/javascripts/bootstrap-modal.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%358baf94b5f076acdf4f5e0103079b0e{I"	path;
-FI"6$root/app/assets/javascripts/bootstrap-popover.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%3cf63a2e3704af836ac15fdcdf1dbb79{I"	path;
-FI"3$root/app/assets/javascripts/event_calendar.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%c188c33898ecd58f0f501897fa08a40d{I"	path;
-FI"5$root/app/assets/javascripts/jquery-1.6.2.min.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%0131e180af622cb1cf3d1198e6135973{I"	path;
-FI"@$root/app/assets/javascripts/jquery-ui-1.8.16.custom.min.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%84367abd7215e0cfaaa9fd91cbded360{I"	path;
-FI"?$root/app/assets/javascripts/jquery-ui-timepicker-addon.js;
-FI"
-mtime;
-FIu;2ÍÄ}§1b
-;I"MSK;
-T;ii;i;";i0*I"hexdigest;
-F"%2fe8864623457390f110067e5a517894I"_version;
-F"%9dc941eee270b2414229e377b80a1007

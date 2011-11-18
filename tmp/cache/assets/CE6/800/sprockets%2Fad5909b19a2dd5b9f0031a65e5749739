@@ -1,16 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617728.8320482:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%33ef4650d04f8b4f4652b49f8120592cI"logical_path;
-F"2smoothness/images/ui-icons_454545_256x240.pngI"pathname;
-FI"O$root/app/assets/stylesheets/smoothness/images/ui-icons_454545_256x240.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T21:24:35+03:00;
-FI"length;
-FI"	4369;
-FI"digest;
-F"%04df656516dec168988ad9ab1f66edbdI"_version;
-F"%bd6901bdb48a1fb713e79538e6a69c1c

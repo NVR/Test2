@@ -16,7 +16,3 @@ $(function (){
 $(function (){
   $("#event_start_at").datetimepicker();
 });
-
-$(function (){
-  $("#test_field").datetimepicker();
-});

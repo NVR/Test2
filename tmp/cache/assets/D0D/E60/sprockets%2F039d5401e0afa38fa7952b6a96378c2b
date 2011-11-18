@@ -1,16 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617728.764247:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%4a598bd3dfc65d323ec54cbeeaa60324I"logical_path;
-F"6smoothness/images/ui-bg_glass_65_ffffff_1x400.pngI"pathname;
-FI"S$root/app/assets/stylesheets/smoothness/images/ui-bg_glass_65_ffffff_1x400.png;
-FI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2011-11-17T21:24:35+03:00;
-FI"length;
-FI"105;
-FI"digest;
-F"%018b5ac1f49d3f1dd52bf4906ede2cf2I"_version;
-F"%bd6901bdb48a1fb713e79538e6a69c1c
