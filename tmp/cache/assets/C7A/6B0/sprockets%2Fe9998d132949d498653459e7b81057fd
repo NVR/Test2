@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321563077.5087051:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617728.7693155:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%db511486efce5f7b528a118711789bd9I"logical_path;
+F"%91a40fd320de399bdb0fff76ba4fdd63I"logical_path;
 F"6smoothness/images/ui-bg_glass_75_dadada_1x400.pngI"pathname;
 FI"S$root/app/assets/stylesheets/smoothness/images/ui-bg_glass_75_dadada_1x400.png;
 FI"content_type;
@@ -12,5 +12,5 @@ FI"2011-11-17T21:24:35+03:00;
 FI"length;
 FI"111;
 FI"digest;
-F"%2595aa9b98f998d64965af8a53aac820I"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%a25499eb11532f1657280b193e1a42cfI"_version;
+F"%bd6901bdb48a1fb713e79538e6a69c1c

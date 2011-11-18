@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321563151.5031142:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617870.408681:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%c45d96874dc01d2733c3ef0c4e18c951I"logical_path;
+F"%53ccdf23488187657a15d10fd98b9ceaI"logical_path;
 F"jquery_ujs.jsI"pathname;
 F"g/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.17/vendor/assets/javascripts/jquery_ujs.jsI"content_type;
 FI"application/javascript;
@@ -386,5 +386,5 @@ mtime;
 FIu:	TimeÍÄuïÂ¢
 :@_zoneI"MSK;
 T:nano_numiÛ:nano_deni:submicro"Iê:offseti0*I"hexdigest;
-F"%2cda53cd72f5fa4dc3aaf1133f2f8d18I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%d2bf5626ad26cedb309c429a6348cff9I"_version;
+F"%9dc941eee270b2414229e377b80a1007

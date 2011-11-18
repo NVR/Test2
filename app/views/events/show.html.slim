@@ -1,0 +1,15 @@
+div.modal-body
+  div.form-stacked
+    = simple_form_for @event do |f|
+      = f.input :name, :input_html=> {:class => 'eventfield'}
+      = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+      = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+      = f.input :repeat , :label_html => {:class => 'checkbox-inline'}
+      = f.input :repeat_frequency, :input_html=> {:class => 'eventfield repeat_eventfield'}
+      = f.input :repeat_after, :input_html=> {:class => 'eventfield repeat_eventfield'}
+      div.modal-footer
+        li.btn.blkbtn 
+          = link_to 'back', root_path
+        = f.button :submit, :class => "btn"
+        li.btn.blkbtn
+          = link_to 'Delete', @event, confirm: 'Are you sure?', method: :delete  if params[:id].present?

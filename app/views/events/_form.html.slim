@@ -1,6 +1,6 @@
 div.modal-body
   div.form-stacked
-    = simple_form_for(event) do |f|
+    = simple_form_for @event do |f|
       = f.input :name, :input_html=> {:class => 'eventfield'}
       = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
       = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
@@ -10,6 +10,8 @@ div.modal-body
       div.modal-footer
         li.btn.blkbtn data-controls-modal="newevent" data-backdrop="true"
           = link_to 'Cancel'
-        = f.button :submit, :class => "btn"
-
+        = f.button :submit, :class => "btn", :value => (params[:id].present? ? "Update" : "Create")
+        - if params[:id].present?
+          li.btn.blkbtn = link_to 'Delete', confirm: 'Are you sure?', method: :delete
 -# :controller => "Events", :action => "create", :html => { :method => :put }
+-# :as => 'string',

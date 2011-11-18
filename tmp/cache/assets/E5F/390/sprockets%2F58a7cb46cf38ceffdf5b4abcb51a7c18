@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321563151.5167606:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617870.4355984:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%058499499aa6ca4412d0b8b078c758cbI"logical_path;
+F"%f96780a79f86db017ed3b615fa20c6daI"logical_path;
 F"bootstrap-popover.jsI"pathname;
 FI"6$root/app/assets/javascripts/bootstrap-popover.js;
 FI"content_type;
@@ -113,5 +113,5 @@ mtime;
 FIu:	Time2ê€}¤1b
 :@_zoneI"MSK;
 T:nano_numii:nano_deni:submicro":offseti0*I"hexdigest;
-F"%83bd1ecfa44b344c90f99725f8becc02I"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%3cf63a2e3704af836ac15fdcdf1dbb79I"_version;
+F"%9dc941eee270b2414229e377b80a1007

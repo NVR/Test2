@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321563077.5234077:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321617728.7930932:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%072fe060a2c4307aeea1319e4a9ad6bfI"logical_path;
+F"%cf7347fc1a9b3206c0e96a25195d7bb9I"logical_path;
 F"?smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.pngI"pathname;
 FI"\$root/app/assets/stylesheets/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png;
 FI"content_type;
@@ -12,5 +12,5 @@ FI"2011-11-17T21:24:35+03:00;
 FI"length;
 FI"101;
 FI"digest;
-F"%c0642f086b6d5bd25baed5328d23361bI"_version;
-F"%1c9609bc58b1e77c196de29021583379
+F"%96d85dfad0abc5012007fa7f4f22d032I"_version;
+F"%bd6901bdb48a1fb713e79538e6a69c1c
