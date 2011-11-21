@@ -3,7 +3,7 @@ div id="event" class="modal hide fade"
     div.form-stacked
       = simple_form_for @event do |f|
         = f.input :name, :input_html=> {:class => 'eventfield'}
-        = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield', :format =>  "%DD%"}
+        = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
         = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
         -# f.input :repeat , :label_html => {:class => 'checkbox-inline'}
         -# f.input :repeat_frequency, :input_html=> {:class => 'eventfield repeat_eventfield'}
