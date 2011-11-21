@@ -7,7 +7,7 @@ div.topbar
             = link_to "Create Event", '#'
             = render 'events/form'
         - else
-          =# link_to "My events" , user_events_path(current_user.id)
+          -# link_to "My events" , user_events_path(current_user.id)
           = link_to "Events", events_path
       ul.nav.secondary-nav
         - if user_signed_in?

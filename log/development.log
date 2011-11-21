@@ -52765,3 +52765,431 @@ Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:19:22 +0300
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:23:58 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (2.8ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:23:58 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:23:58 UTC +00:00], ["user_id", nil]]
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (8.1ms)
+ERROR: compiling _app_views_layouts__header_html_slim___2380613115786004609_34529500 RAISED /home/nvr/Test2/app/views/layouts/_header.html.slim:12: syntax error, unexpected keyword_end, expecting ')'
+; end; @output_buffer.safe_concat(...
+     ^
+/home/nvr/Test2/app/views/layouts/_header.html.slim:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/nvr/Test2/app/views/layouts/_header.html.slim:22: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_layouts__header_html_slim___2380613115786004609_34529500(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/_header";_old_output_buffer = @output_buffer;header = local_assigns[:header];;@output_buffer = output_buffer || ActiveSupport::SafeBuffer.new; @output_buffer.safe_concat(("<div class=\"topbar\"><div class=\"topbar-inner\"><div class=\"container\"><ul class=\"nav\">")); 
+; 
+; 
+; 
+; if user_signed_in? && controller_name == 'events'; 
+; @output_buffer.safe_concat(("<li data-backdrop=\"true\" data-controls-modal=\"event\">")); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Create Event", '#'))).to_s)); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((render 'events/form'))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); else; 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((# link_to "My events" , user_events_path(current_user.id)))).to_s)); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Events", events_path))).to_s)); 
+; end; @output_buffer.safe_concat(("</ul><ul class=\"nav secondary-nav\">")); 
+; if user_signed_in?; 
+; @output_buffer.safe_concat(("<li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "#{current_user.username} ",edit_user_registration_path))).to_s)); 
+; @output_buffer.safe_concat(("</li><li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign out" , destroy_user_session_path, :method => 'delete'))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); else; 
+; @output_buffer.safe_concat(("<li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign up", new_user_registration_path))).to_s)); 
+; @output_buffer.safe_concat(("</li><li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign in", new_user_session_path))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); end; @output_buffer.safe_concat(("</ul></div></div></div>")); @output_buffer
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `module_eval'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `compile'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:190:in `compile!'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:143:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/nvr/Test2/app/views/layouts/application.html.slim:9:in `_app_views_layouts_application_html_slim___102215404863849769_31530360'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:144:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:52:in `render_with_layout'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:99:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:167:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:416:in `_run__382819196143946541__process_action__2159014232742071670__callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:121:in `process'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:45:in `process'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal.rb:193:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal.rb:236:in `block in action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:532:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:35:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:34:in `catch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:34:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/query_cache.rb:62:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/logger.rb:13:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/engine.rb:456:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/content_length.rb:16:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Rendered layouts/_header.html.slim (7.7ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (/home/nvr/Test2/app/views/layouts/_header.html.slim:12: syntax error, unexpected keyword_end, expecting ')'
+; end; @output_buffer.safe_concat(...
+     ^
+/home/nvr/Test2/app/views/layouts/_header.html.slim:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/nvr/Test2/app/views/layouts/_header.html.slim:22: syntax error, unexpected keyword_end, expecting ')'):
+    9:         - else
+    10:           =# link_to "My events" , user_events_path(current_user.id)
+    11:           = link_to "Events", events_path
+    12:       ul.nav.secondary-nav
+    13:         - if user_signed_in?
+    14:           li = link_to "#{current_user.username} ",edit_user_registration_path
+    15:           li = link_to "Sign out" , destroy_user_session_path, :method => 'delete'
+  app/views/layouts/application.html.slim:9:in `_app_views_layouts_application_html_slim___102215404863849769_31530360'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:24:08 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (3.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:24:08 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:24:08 UTC +00:00], ["user_id", nil]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (15.7ms)
+ERROR: compiling _app_views_layouts__header_html_slim___2380613115786004609_34529500 RAISED /home/nvr/Test2/app/views/layouts/_header.html.slim:12: syntax error, unexpected keyword_end, expecting ')'
+; end; @output_buffer.safe_concat(...
+     ^
+/home/nvr/Test2/app/views/layouts/_header.html.slim:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/nvr/Test2/app/views/layouts/_header.html.slim:22: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_layouts__header_html_slim___2380613115786004609_34529500(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/_header";_old_output_buffer = @output_buffer;header = local_assigns[:header];;@output_buffer = output_buffer || ActiveSupport::SafeBuffer.new; @output_buffer.safe_concat(("<div class=\"topbar\"><div class=\"topbar-inner\"><div class=\"container\"><ul class=\"nav\">")); 
+; 
+; 
+; 
+; if user_signed_in? && controller_name == 'events'; 
+; @output_buffer.safe_concat(("<li data-backdrop=\"true\" data-controls-modal=\"event\">")); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Create Event", '#'))).to_s)); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((render 'events/form'))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); else; 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((# link_to "My events" , user_events_path(current_user.id)))).to_s)); 
+; @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Events", events_path))).to_s)); 
+; end; @output_buffer.safe_concat(("</ul><ul class=\"nav secondary-nav\">")); 
+; if user_signed_in?; 
+; @output_buffer.safe_concat(("<li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "#{current_user.username} ",edit_user_registration_path))).to_s)); 
+; @output_buffer.safe_concat(("</li><li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign out" , destroy_user_session_path, :method => 'delete'))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); else; 
+; @output_buffer.safe_concat(("<li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign up", new_user_registration_path))).to_s)); 
+; @output_buffer.safe_concat(("</li><li>")); @output_buffer.safe_concat(((::Temple::Utils.escape_html_safe((link_to "Sign in", new_user_session_path))).to_s)); 
+; @output_buffer.safe_concat(("</li>")); end; @output_buffer.safe_concat(("</ul></div></div></div>")); @output_buffer
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `module_eval'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:282:in `compile'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:190:in `compile!'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:143:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:256:in `render_partial'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:228:in `block (2 levels) in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:227:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/partial_renderer.rb:219:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/nvr/Test2/app/views/layouts/application.html.slim:9:in `_app_views_layouts_application_html_slim___102215404863849769_31530360'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:144:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:55:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/template.rb:142:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:52:in `render_with_layout'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:99:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:167:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:416:in `_run__382819196143946541__process_action__2159014232742071670__callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/notifications.rb:53:in `instrument'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/base.rb:121:in `process'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/abstract_controller/rendering.rb:45:in `process'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal.rb:193:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_controller/metal.rb:236:in `block in action'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/routing/route_set.rb:532:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:35:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:34:in `catch'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/warden-1.1.0/lib/warden/manager.rb:34:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/query_cache.rb:62:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.1.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/logger.rb:13:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/activesupport-3.1.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/engine.rb:456:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/content_length.rb:16:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/railties-3.1.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/nvr/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Rendered layouts/_header.html.slim (6.4ms)
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (/home/nvr/Test2/app/views/layouts/_header.html.slim:12: syntax error, unexpected keyword_end, expecting ')'
+; end; @output_buffer.safe_concat(...
+     ^
+/home/nvr/Test2/app/views/layouts/_header.html.slim:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/nvr/Test2/app/views/layouts/_header.html.slim:22: syntax error, unexpected keyword_end, expecting ')'):
+    9:         - else
+    10:           =# link_to "My events" , user_events_path(current_user.id)
+    11:           = link_to "Events", events_path
+    12:       ul.nav.secondary-nav
+    13:         - if user_signed_in?
+    14:           li = link_to "#{current_user.username} ",edit_user_registration_path
+    15:           li = link_to "Sign out" , destroy_user_session_path, :method => 'delete'
+  app/views/layouts/application.html.slim:9:in `_app_views_layouts_application_html_slim___102215404863849769_31530360'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (2.7ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:24:24 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:24:24 UTC +00:00], ["user_id", nil]]
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (10.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered events/_form.html.slim (29.8ms)
+Rendered layouts/_header.html.slim (162.1ms)
+Completed 200 OK in 342ms (Views: 204.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:24:24 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:25:39 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (13.5ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:25:39 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:25:39 UTC +00:00], ["user_id", nil]]
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (12.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered events/_form.html.slim (35.6ms)
+Rendered layouts/_header.html.slim (216.3ms)
+Completed 200 OK in 393ms (Views: 262.4ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:25:40 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
