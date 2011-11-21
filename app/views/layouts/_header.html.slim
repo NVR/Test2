@@ -4,7 +4,7 @@ div.topbar
       ul.nav
         - if user_signed_in? && controller_name == 'events'
           li data-controls-modal="event" data-backdrop="true"
-            = link_to "Create Event", '#'
+            = link_to params[:id].present? ? "Update" : "Create Event", '#'
             = render 'events/form'
         - else
           -# link_to "My events" , user_events_path(current_user.id)
