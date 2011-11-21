@@ -2,11 +2,12 @@ div.topbar
   div.topbar-inner
     div.container
       ul.nav
-        - if user_signed_in?
-          li data-controls-modal="newevent" data-backdrop="true"
+        - if user_signed_in? && controller_name == 'events'
+          li data-controls-modal="event" data-backdrop="true"
             = link_to "Create Event", '#'
-            div id="newevent" class="modal hide fade"
-              = render 'form'
+            = render 'events/form'
+        - else
+          = link_to "My events" , user_events_path(current_user.id)
       ul.nav.secondary-nav
         - if user_signed_in?
           li = link_to "#{current_user.username} ",edit_user_registration_path
