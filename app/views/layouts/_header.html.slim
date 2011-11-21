@@ -6,9 +6,8 @@ div.topbar
           li data-controls-modal="event" data-backdrop="true"
             = link_to params[:id].present? ? "Update" : "Create Event", '#'
             = render 'events/form'
-        - else
-          -# link_to "My events" , user_events_path(current_user.id)
-          = link_to "Events", events_path
+        li = link_to "All events", events_path if params[:user_id].present?
+        li = link_to "My events" , user_events_path(current_user.id) unless params[:user_id].present?
       ul.nav.secondary-nav
         - if user_signed_in?
           li = link_to "#{current_user.username} ",edit_user_registration_path

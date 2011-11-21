@@ -1,16 +1,16 @@
 class EventsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index]
-
+  before_filter :can_edit?, :only => [:edit, :delete]
   def index
 
     @month = (params[:month] || (Time.zone || Time).now.month).to_i
     @year = (params[:year] || (Time.zone || Time).now.year).to_i
     if user_signed_in? 
-      @events = current_user.events
       @event = current_user.events.create(params[:event])
     end
     @shown_month = Date.civil(@year, @month)
-    @event_strips = Event.event_strips_for_month(@shown_month)
+    @event_strips = params[:user_id].present? ? Event.user_events(params[:user_id]).event_strips_for_month(@shown_month) : Event.event_strips_for_month(@shown_month)
+
   end
 
   def create
@@ -46,5 +46,10 @@ class EventsController < ApplicationController
     end
   end
 
-
+  private
+  def can_edit?
+    unless user_signed_in? && ( @event.user_id == current_user.id || nil)
+      redirect_to root_path
+    end
+  end
 end
