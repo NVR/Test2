@@ -1,0 +1,20 @@
+div id="event"
+  div.modal-body
+    div.form-stacked
+      = simple_form_for @event do |f|
+        = f.input :name, :input_html=> {:class => 'eventfield'}
+        = f.input :start_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+        = f.input :end_at, :as => 'string', :input_html=> {:class => 'eventfield'}
+        -# f.input :repeat , :label_html => {:class => 'checkbox-inline'}
+        -# f.input :repeat_frequency, :input_html=> {:class => 'eventfield repeat_eventfield'}
+        -# f.input :repeat_after, :input_html=> {:class => 'eventfield repeat_eventfield'}
+        div.modal-footer
+          li.btn.blkbtn 
+            = link_to 'Cancel', root_path
+          = f.button :submit, :class => "btn", :value => (params[:id].present? ? "Update" : "Create")
+          - if params[:id].present?
+            li.btn.blkbtn = link_to 'Delete', @event, confirm: 'Are you sure?', method: :delete
+  script
+    | $(document).ready(function() {$("#event_start_at").datetimepicker({ dateFormat: "yy-mm-dd"});});
+    | $(document).ready(function() {$("#event_end_at").datetimepicker({ dateFormat: "yy-mm-dd"});});
+

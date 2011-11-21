@@ -1,0 +1,17 @@
+div.topbar
+  div.topbar-inner
+    div.container
+      ul.nav
+        - if user_signed_in? && controller_name == 'events'
+          li data-controls-modal="event" data-backdrop="true"
+            = link_to params[:id].present? ? "Update" : "Create Event", '#'
+            = render 'events/form'
+        li = link_to "All events", events_path if params[:user_id].present?
+        li = link_to "My events" , user_events_path(current_user.id) unless params[:user_id].present?
+      ul.nav.secondary-nav
+        - if user_signed_in?
+          li = link_to "#{current_user.username} ",edit_user_registration_path
+          li = link_to "Sign out" , destroy_user_session_path, :method => 'delete'
+        - else
+          li = link_to "Sign up", new_user_registration_path 
+          li = link_to "Sign in", new_user_session_path

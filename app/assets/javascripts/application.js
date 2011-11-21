@@ -4,6 +4,12 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
-//= require jquery
+//= require bootstrap-modal
+//= require bootstrap-popover
+//= require event_calendar
+//= require application
+//= require jquery-1.6.2.min
+//= require jquery-ui-1.8.16.custom.min
 //= require jquery_ujs
-//= require_tree .
+//= require jquery-ui-timepicker-addon
+

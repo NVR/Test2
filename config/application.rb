@@ -42,7 +42,9 @@ module Test2
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    config.assets.precompile += ['application.js', 'jquery-1.6.2.min.js', 'jquery-ui-1.8.16.custom.min.js', 'jquery-ui-timepicker-addon.js']
+
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = '0'
   end
 end
