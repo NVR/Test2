@@ -7,7 +7,4 @@ class User < ActiveRecord::Base
 
   has_many :events
 
-  def feed
-    Event.where("user_id = ?", id)
-  end
 end

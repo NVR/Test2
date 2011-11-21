@@ -53383,3 +53383,983 @@ Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:27:44 +0300
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2011-11-21 15:29:00 +0300
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YSV7K10NdgeLMFhIKGoz884WXWndBI1b/8FxiqpR/wQ="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (3.1ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:29:01 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:29:01 UTC +00:00], ["user_id", nil]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (8.8ms)
+Rendered layouts/_header.html.slim (71.4ms)
+Completed 200 OK in 216ms (Views: 111.7ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:01 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:29:11 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (12.1ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:29:11 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:29:11 UTC +00:00], ["user_id", nil]]
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (63.2ms)
+Rendered layouts/_header.html.slim (18.4ms)
+Completed 200 OK in 306ms (Views: 112.6ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (2.6ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:29:12 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:29:12 UTC +00:00], ["user_id", nil]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (7.2ms)
+Rendered layouts/_header.html.slim (19.9ms)
+Completed 200 OK in 115ms (Views: 51.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:12 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events/18" for 127.0.0.1 at 2011-11-21 15:29:17 +0300
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+Completed 401 Unauthorized in 19ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.slim (13.9ms)
+Rendered devise/sessions/new.html.slim within layouts/application (32.3ms)
+Rendered layouts/_header.html.slim (3.0ms)
+Completed 200 OK in 257ms (Views: 144.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:18 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:29:33 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.3ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:29:34 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:29:34 UTC +00:00], ["user_id", nil]]
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (10.4ms)
+Rendered layouts/_header.html.slim (17.6ms)
+Completed 200 OK in 123ms (Views: 52.7ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:29:34 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:40:05 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (2.9ms)[0m  SELECT "events".* FROM "events" 
+Completed 500 Internal Server Error in 115ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:40:18 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (49.2ms)[0m  [1mSELECT "events".* FROM "events" [0m
+Completed 500 Internal Server Error in 86ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:40:30 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (14.4ms)[0m  SELECT "events".* FROM "events" 
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.7ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:41:32 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.4ms)[0m  [1mSELECT "events".* FROM "events" [0m
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:41:57 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (10.4ms)[0m  SELECT "events".* FROM "events" 
+Completed 500 Internal Server Error in 53ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:42:31 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.5ms)[0m  [1mSELECT "events".* FROM "events" [0m
+Completed 500 Internal Server Error in 84ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:43:22 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (3.0ms)[0m  SELECT "events".* FROM "events" 
+Completed 500 Internal Server Error in 63ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:43:37 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.3ms)[0m  [1mSELECT "events".* FROM "events" [0m
+Completed 500 Internal Server Error in 83ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2011-11-21 15:44:49 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (6.5ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mEvent Load (19.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (9.0ms)
+Rendered layouts/_header.html.slim (1.8ms)
+Completed 200 OK in 242ms (Views: 99.6ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:44:50 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-11-21 15:44:59 +0300
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.slim (0.7ms)
+Rendered devise/sessions/new.html.slim within layouts/application (21.0ms)
+Rendered layouts/_header.html.slim (1.9ms)
+Completed 200 OK in 119ms (Views: 66.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:00 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-11-21 15:45:27 +0300
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "user"=>{"email"=>"foo@bar.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'foo@bar.com' LIMIT 1
+  [1m[36m (74.9ms)[0m  [1mUPDATE "users" SET "remember_created_at" = '2011-11-21 12:45:28.327030', "updated_at" = '2011-11-21 12:45:28.328505' WHERE "users"."id" = 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2011-11-21 12:45:28.447245', "sign_in_count" = 2, "updated_at" = '2011-11-21 12:45:28.447810' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/events/18
+Completed 302 Found in 1027ms
+
+
+Started GET "/events/18" for 127.0.0.1 at 2011-11-21 15:45:28 +0300
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "18"]]
+Rendered events/show.html.slim within layouts/application (72.3ms)
+Rendered events/_form.html.slim (16.2ms)
+Rendered layouts/_header.html.slim (36.8ms)
+Completed 200 OK in 263ms (Views: 203.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:29 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:45:57 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.0ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (8.5ms)
+Rendered events/_form.html.slim (11.2ms)
+Rendered layouts/_header.html.slim (13.2ms)
+Completed 200 OK in 256ms (Views: 45.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:45:58 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+  Processing by EventsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "event"=>{"name"=>"112", "start_at"=>"2011-11-21 15:46", "end_at"=>"2011-11-23 0:00"}, "commit"=>"Create"}
+  [1m[35mEvent Load (3.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (10.3ms)
+Rendered events/_form.html.slim (11.9ms)
+Rendered layouts/_header.html.slim (15.0ms)
+Completed 200 OK in 263ms (Views: 54.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:24 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2011-11-21 15:46:44 +0300
+  Processing by EventsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "event"=>{"name"=>"112", "start_at"=>"2011-11-21 15:46", "end_at"=>"2011-11-23 0:00"}, "commit"=>"Create"}
+  [1m[36mEvent Load (3.1ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:46:44 UTC +00:00], ["end_at", Wed, 23 Nov 2011 00:00:00 UTC +00:00], ["name", "112"], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", Mon, 21 Nov 2011 15:46:00 UTC +00:00], ["updated_at", Mon, 21 Nov 2011 12:46:44 UTC +00:00], ["user_id", 1]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (11.3ms)
+Rendered events/_form.html.slim (23.3ms)
+Rendered layouts/_header.html.slim (25.6ms)
+Completed 200 OK in 322ms (Views: 106.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:46:53 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started PUT "/events/410" for 127.0.0.1 at 2011-11-21 15:47:06 +0300
+  Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "event"=>{"name"=>"112", "start_at"=>"2011-11-21 15:46", "end_at"=>"2011-11-23 0:00"}, "commit"=>"Create", "id"=>"410"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "410"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:47:06 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (2.9ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:47:06 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:47:06 UTC +00:00], ["user_id", 1]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (16.8ms)
+Rendered events/_form.html.slim (12.0ms)
+Rendered layouts/_header.html.slim (21.1ms)
+Completed 200 OK in 253ms (Views: 68.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:07 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/events/410" for 127.0.0.1 at 2011-11-21 15:47:18 +0300
+  Processing by EventsController#show as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "410"]]
+Rendered events/show.html.slim within layouts/application (30.6ms)
+Rendered events/_form.html.slim (20.1ms)
+Rendered layouts/_header.html.slim (22.5ms)
+Completed 200 OK in 179ms (Views: 111.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:19 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/events/410" for 127.0.0.1 at 2011-11-21 15:47:25 +0300
+  Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "id"=>"410"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "410"]]
+  [1m[36mSQL (10.9ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 410]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mEvent Load (2.9ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 21 Nov 2011 12:47:32 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:47:32 UTC +00:00], ["user_id", 1]]
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC[0m
+Rendered events/index.html.slim within layouts/application (77.2ms)
+Rendered events/_form.html.slim (15.8ms)
+Rendered layouts/_header.html.slim (18.2ms)
+Completed 200 OK in 336ms (Views: 142.0ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:32 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:33 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:33 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:47:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started PUT "/events/412" for 127.0.0.1 at 2011-11-21 15:48:32 +0300
+  Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CZ5Uc+T6Pv++H/WFRBhfIibQs7QV7EhZL7Kmt5Jiaic=", "event"=>{"name"=>"3", "start_at"=>"2011-11-21 15:48", "end_at"=>"2011-11-23 0:00"}, "commit"=>"Create", "id"=>"412"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "412"]]
+  [1m[35m (70.7ms)[0m  UPDATE "events" SET "name" = '3', "start_at" = '2011-11-21 15:48:00.000000', "end_at" = '2011-11-23 00:00:00.000000', "updated_at" = '2011-11-21 12:48:32.433088' WHERE "events"."id" = 412
+Redirected to http://localhost:3000/
+Completed 302 Found in 263ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:48:32 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mEvent Load (4.1ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:48:32 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:48:32 UTC +00:00], ["user_id", 1]]
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (8.9ms)
+Rendered events/_form.html.slim (12.3ms)
+Rendered layouts/_header.html.slim (15.5ms)
+Completed 200 OK in 268ms (Views: 141.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:48:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:50:37 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE "events"."user_id" = 1
+Completed 500 Internal Server Error in 339ms
+
+NameError (undefined local variable or method `events' for #<EventsController:0x000000042e9948>):
+  app/controllers/events_controller.rb:11:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.7ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:51:01 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mUser Load (8.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (user_id = 1)
+Completed 500 Internal Server Error in 202ms
+
+NameError (undefined local variable or method `events' for #<EventsController:0x00000003a58630>):
+  app/controllers/events_controller.rb:11:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:51:17 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 110ms
+
+NoMethodError (undefined method `year' for nil:NilClass):
+  app/controllers/events_controller.rb:11:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:52:05 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."user_id" = 1[0m
+Completed 500 Internal Server Error in 117ms
+
+NoMethodError (undefined method `presents?' for #<ActiveRecord::Relation:0x000000041ea858>):
+  app/controllers/events_controller.rb:9:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:53:12 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 56ms
+
+NoMethodError (undefined method `year' for nil:NilClass):
+  app/controllers/events_controller.rb:14:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:53:28 +0300
+  Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 67ms
+
+NoMethodError (undefined method `year' for nil:NilClass):
+  app/controllers/events_controller.rb:14:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:54:40 +0300
+  Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `year' for nil:NilClass):
+  app/controllers/events_controller.rb:5:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:54:49 +0300
+  Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `year' for nil:NilClass):
+  app/controllers/events_controller.rb:5:in `index'
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-21 15:55:08 +0300
+  Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (101.0ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "repeat", "repeat_after", "repeat_frequency", "start_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 21 Nov 2011 12:55:08 UTC +00:00], ["end_at", nil], ["name", nil], ["repeat", nil], ["repeat_after", nil], ["repeat_frequency", nil], ["start_at", nil], ["updated_at", Mon, 21 Nov 2011 12:55:08 UTC +00:00], ["user_id", 1]]
+  [1m[35mEvent Load (48.1ms)[0m  SELECT "events".* FROM "events" WHERE (('2011-10-29 20:00:00.000000' <= end_at) AND (start_at< '2011-12-03 21:00:00.000000')) ORDER BY start_at ASC
+Rendered events/index.html.slim within layouts/application (13.5ms)
+Rendered events/_form.html.slim (15.6ms)
+Rendered layouts/_header.html.slim (18.3ms)
+Completed 200 OK in 513ms (Views: 142.4ms | ActiveRecord: 150.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothness/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /smoothness/jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /event_calendar.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-1.8.16.custom.css?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /jquery-ui-1.8.16.custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-21 15:55:09 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/user/1/events" for 127.0.0.1 at 2011-11-21 15:56:16 +0300
+
+ActionController::RoutingError (No route matches [GET] "/user/1/events"):
+  
+
+Rendered /home/nvr/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)

@@ -2,13 +2,14 @@ class EventsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index]
 
   def index
-    @events = Event.all
+
     @month = (params[:month] || (Time.zone || Time).now.month).to_i
     @year = (params[:year] || (Time.zone || Time).now.year).to_i
-    @event =  Event.create(params[:event])
-    #@event = current_user.events.build(params[:event])
+    if user_signed_in? 
+      @events = current_user.events
+      @event = current_user.events.create(params[:event])
+    end
     @shown_month = Date.civil(@year, @month)
-
     @event_strips = Event.event_strips_for_month(@shown_month)
   end
 
